@@ -1,0 +1,16 @@
+<form class="form-horizontal" (ngSubmit)="submit()" name="form" #form="ngForm" >
+  <div class="info">
+
+    <div class="container">
+      <legend>Payment Detail</legend>
+
+      <app-credit-card-form [creditCard]="order.creditCard"></app-credit-card-form>
+    </div>
+  </div>
+
+
+  <div class="checkout">
+    <input type="submit" class="btn btn-primary" name="btnPlaceOrder" value="Place Order" title="Place Order">
+
+  </div>
+</form>
